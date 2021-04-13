@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+/*******************************************************************************
+  common
+********************************************************************************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans CJK", "맑은 고딕", 돋움, sans-serif;
+  /* font-family: "Noto Sans KR", "맑은 고딕", 돋움, sans-serif; */
+  font-weight: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+li,
+a,
+i,
+button {
+  cursor: pointer;
+}
+
+h2 {
+  margin: 0;
+}
+
+.wrap {
+  max-width: 1460px;
+  margin: 0 auto;
+  padding: 120px 0 0;
+}
+/*******************************************************************************
+  header
+********************************************************************************/
+header {
+  height: 90px;
+}
+
+.header_wrap {
+  /* width: 1760px; */
+  height: 100%;
+  margin: 0 80px;
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  top: 22.5px;
+  margin: 0;
+  width: 210px;
+}
+
+h1 img {
+  width: 100%;
+}
+
+.navbar {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  top: 36px;
+  text-align: center;
+}
+
+.navbar .gnb > li {
+  display: inline-block;
+  padding: 0 23px;
+  position: relative;
+  line-height: 18px;
+}
+
+.navbar .gnb > li:hover {
+  color: #617590;
+}
+
+.navbar .gnb > li:hover .lnb {
+  display: block;
+}
+
+.navbar .lnb {
+  position: absolute;
+  top: 54px;
+  left: 0;
+  display: none;
+}
+
+.navbar .lnb li {
+  background-color: antiquewhite;
+  font-size: 15px;
+  line-height: 18px;
+  width: 180px;
+  text-align: left;
+}
+
+.icons {
+  position: absolute;
+  top: 37px;
+  right: 0;
+}
+
+.icons i {
+  padding: 0 20px;
+}
+
+/*******************************************************************************
+  footer
+********************************************************************************/
