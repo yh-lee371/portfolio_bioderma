@@ -4,6 +4,30 @@
   font-size: 13px;
   background-color: transparent;
   color: #000;
+  position: relative;
+}
+
+.moreview_btn:after {
+  content: "";
+  width: 105px;
+  height: 4px;
+  background-color: #cbcbcb;
+  display: block;
+}
+
+.moreview_btn:before {
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: #617590;
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  transition: 0.4s;
+}
+
+.moreview_btn:hover:before {
+  width: 105px;
 }
 
 .moreview_btn a {
@@ -14,12 +38,19 @@
 /*******************************************************************************
   banner
 ********************************************************************************/
+#banner {
+  padding-top: 90px;
+}
+
 .product {
   float: left;
   height: 100vh;
   width: 50%;
   max-width: 980px;
-  background-color: antiquewhite;
+}
+
+.product img {
+  height: 100%;
 }
 
 .info,
@@ -31,7 +62,17 @@
 }
 
 .info {
-  padding: 140px 125px;
+  background: url(../images/bg/so-white.png);
+  position: relative;
+}
+
+.info .wrap {
+  padding: 0 0 0 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .info h2 {
@@ -43,7 +84,19 @@
 }
 
 .img {
-  background-color: aquamarine;
+  background-color: lightcyan;
+}
+
+.item1 .product {
+  background: url(../images/bg/atoderm_baume.png) no-repeat 50% 50% / cover;
+}
+
+.item2 .product {
+  background: url(../images/bg/H2O.png) no-repeat 50% 50% / cover;
+}
+
+.item3 .product {
+  background: url(../images/bg/cicabio.png) no-repeat 50% 50% / cover;
 }
 
 /*******************************************************************************
@@ -109,9 +162,9 @@
 }
 
 .product_list1 .description .line {
-  color: #0875ae;
+  color: #617590;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 42px;
   display: block;
 }
 
@@ -129,11 +182,14 @@
 ********************************************************************************/
 #online {
   background-color: #e2eaf3;
+  background: #e2eaf3 url(../images/bg/bg_sebium2.png) no-repeat 30% center /
+    320px;
 }
 
 #online .wrap {
   padding: 105px 0;
   position: relative;
+  width: 50%;
   left: 50%;
 }
 
@@ -141,8 +197,8 @@
   display: inline-block;
 }
 
-.txt span {
-  color: #0875ae;
+#online .txt span {
+  color: #617590;
 }
 
 .txt p {
@@ -173,7 +229,7 @@
 }
 
 .move_btn:hover {
-  background-color: #0875ae;
+  background-color: #617590;
   color: #fff;
 }
 
@@ -193,7 +249,7 @@
 }
 
 .type_list li:hover {
-  color: #0875ae;
+  color: #617590;
 }
 
 .type_list .active:after {
@@ -201,7 +257,7 @@
   display: block;
   width: 90px;
   height: 4px;
-  background-color: #0875ae;
+  background-color: #617590;
   margin-top: 8px;
 }
 
@@ -217,6 +273,10 @@
   text-align: center;
 }
 
+.product_list2 li:nth-child(n + 5) {
+  display: none;
+}
+
 .product_list2 .img2 {
   height: 365px;
 }
@@ -230,7 +290,7 @@
 }
 
 .product_list2 .description .line {
-  color: #0875ae;
+  color: #617590;
   font-weight: 700;
   margin-bottom: 20px;
   display: block;
@@ -264,6 +324,11 @@
   width: 365px;
   vertical-align: top;
   border: 1px solid #f2f2f2;
+  border-right: none;
+}
+
+.review_list li:last-child {
+  border-right: 1px solid #f2f2f2;
 }
 
 .review_list .review_img {
@@ -332,8 +397,8 @@
 ********************************************************************************/
 
 #etc .wrap {
-  max-width: 1640px;
-  padding: 76px 0;
+  width: 1760px;
+  padding: 76px 60px;
 }
 
 #etc .wrap > div {
@@ -347,61 +412,18 @@
 }
 
 .event {
-  margin-left: 12px;
+  margin-left: 24px;
 }
 
-/*******************************************************************************
-  footer
-********************************************************************************/
-footer {
-  border-top: 2px solid #0875ae;
-}
-
-footer .wrap {
-  padding: 0;
-  position: relative;
-}
-
-.utill {
-  overflow: hidden;
-  padding: 18px 0;
-  float: left;
-  width: 100%;
-}
-
-.utill ul li {
-  display: inline-block;
-}
-
-.utill .link li {
-  padding: 0 14px;
-  position: relative;
-}
-
-.utill .link li:first-child {
-  padding-left: 0;
-}
-
-.utill .link > li:after {
-  content: "ㅣ";
+.shop img,
+.event img {
   position: absolute;
-  right: -7px;
-  top: 0;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.utill .link > li:last-child:after {
-  content: none;
-}
-
-.utill .family-site {
-  position: absolute;
-  top: 0;
-}
-
-.utill .family-site li {
-  display: list-item;
-}
-
-.utill .sns {
-  float: right;
+.shop .moreview_btn,
+.event .moreview_btn {
+  margin-left: -6px;
 }

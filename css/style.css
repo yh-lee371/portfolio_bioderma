@@ -26,26 +26,37 @@ a {
 }
 
 li,
-a,
-i,
-button {
+p,
+span {
+  line-height: 1.7;
+}
+
+li,
+i {
   cursor: pointer;
 }
 
-h2 {
+li h2 {
   margin: 0;
 }
 
 .wrap {
-  max-width: 1460px;
+  width: 1580px;
   margin: 0 auto;
-  padding: 120px 0 0;
+  padding: 120px 60px 0;
 }
 /*******************************************************************************
   header
 ********************************************************************************/
 header {
   height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 200;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .header_wrap {
@@ -117,3 +128,206 @@ h1 img {
 /*******************************************************************************
   footer
 ********************************************************************************/
+footer {
+  border-top: 2px solid #617590;
+  /* background-color: #f2f2f2; */
+  font-size: 14px;
+}
+
+footer .wrap {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+footer span {
+  color: #999;
+}
+
+/*utill*/
+.utill {
+  padding: 18px 0;
+  float: left;
+  width: 100%;
+}
+
+.utill ul li {
+  display: inline-block;
+  height: 28px;
+}
+
+.utill .link {
+  float: left;
+}
+
+.utill .link > li {
+  padding: 0 14px;
+  position: relative;
+}
+
+.utill .link > li:first-child {
+  padding-left: 0;
+}
+
+.utill .link > li:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 1px;
+  height: 10px;
+  background-color: #cbcbcb;
+}
+
+.utill .link .drop_link:after {
+  content: none;
+}
+
+.utill .link .drop_link i {
+  margin-left: 4px;
+  transition: 0.4s;
+  color: #617590;
+}
+
+.utill .family-site {
+  position: absolute;
+  top: 30px;
+  display: none;
+  border: 1px solid #617590;
+  background-color: #fff;
+  width: 110px;
+  z-index: 1;
+}
+
+.utill .family-site li {
+  display: list-item;
+  padding: 0 14px;
+}
+
+.utill .family-site li:hover {
+  background-color: #617590;
+  color: #fff;
+}
+
+.utill .active i {
+  transform: rotate(180deg);
+}
+
+.utill .active .family-site {
+  display: block;
+}
+
+.utill .sns {
+  float: right;
+  font-size: 0;
+}
+
+.utill .sns li {
+  margin-left: 10px;
+}
+
+/*info*/
+.info2 {
+  clear: both;
+  padding: 50px 0;
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.info2 > div {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding: 0 35px;
+}
+
+.info2 > div:after {
+  content: "";
+  width: 1px;
+  height: 220px;
+  background-color: #cbcbcb;
+  display: block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+}
+
+.info2 > div:last-child:after {
+  content: none;
+}
+
+.info2 .customer-center {
+  padding-left: 0;
+}
+
+.info2 .customer-center > span {
+  font-size: 26px;
+  margin: 28px 0 20px;
+  display: block;
+  color: #000;
+}
+
+.info2 .txt span {
+  display: block;
+  padding-bottom: 4px;
+}
+
+.info2 .link {
+  padding-top: 35px;
+}
+
+.info2 .link > div {
+  display: inline-block;
+  padding: 15px 30px;
+}
+
+.info2 .link .notice {
+  margin-right: 10px;
+  background-color: #617590;
+  color: #fff;
+}
+
+.info2 .link .qa-board {
+  border: 1px solid #617590;
+}
+
+.info2 .shopping-menu .menu li {
+  padding-bottom: 4px;
+  color: #999;
+}
+
+.info2 .return span {
+  display: block;
+  padding-bottom: 4px;
+}
+
+/*address*/
+.address {
+  padding: 35px 0;
+  float: left;
+}
+.address ul li {
+  display: inline-block;
+}
+
+.address ul li span {
+  padding-right: 4px;
+}
+
+.address ul li:nth-child(5) {
+  display: block;
+  margin: 4px 0;
+}
+
+.escrow {
+  float: right;
+  padding: 35px 0;
+}
+
+.escrow img {
+  height: 56px;
+}
+
+.copylight {
+  clear: both;
+}
